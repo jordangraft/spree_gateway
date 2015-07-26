@@ -103,8 +103,8 @@ module Spree
           options.merge!(address: {
             address1: address.address1,
             address2: address.address2,
-            city: address.city,
-            zip: address.zipcode
+            # zip: address.zipcode,
+            city: address.city
           })
 
           if country = address.country
